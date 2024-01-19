@@ -1,0 +1,17 @@
+main {
+  background-color: $dark-slate-grey;
+}
+h1 {
+  @include sameSpace;
+  @include centeredOldStyle;
+  background-color: $medium-turquoise;
+  color: $dark-slate-grey;
+  font-family: $stonewall-inn-font-family;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+section {
+  background-color: $salmon;
+  @include sameSpace;
+  color: $dark-slate-grey;
+}

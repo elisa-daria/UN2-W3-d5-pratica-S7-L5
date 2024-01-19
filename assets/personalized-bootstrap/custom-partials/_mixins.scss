@@ -1,0 +1,35 @@
+// to center element in the page
+@mixin gettingCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centeredOldStyle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+// to add evenly space
+
+@mixin sameSpace {
+  margin: $main-margin;
+  padding: $main-padding;
+}
+
+// opacity animation
+@mixin hideAndSeek {
+  animation: magicH 4s linear 0s infinite alternate;
+
+  @keyframes magicH {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

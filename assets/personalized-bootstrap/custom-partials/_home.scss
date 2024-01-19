@@ -1,0 +1,22 @@
+h1 {
+  @include sameSpace;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $salmon;
+  color: $tomato;
+  font-family: $stonewall-inn-font-family;
+  font-weight: 600;
+  font-size: 3.5rem;
+  i {
+    @include hideAndSeek;
+  }
+}
+section:nth-of-type(1) {
+  background-color: $medium-aquamarine;
+  @include centeredOldStyle;
+
+  q {
+    color: $white;
+    font-family: $stonewall-inn-font-family;
+  }
+}

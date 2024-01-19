@@ -1,0 +1,20 @@
+@import "../scss-bootstrap/functions";
+@import "../scss-bootstrap/variables";
+@import "../personalized-bootstrap/custom-partials/variables";
+//ADDING COLORS to the original palette
+
+$theme-colors: map-merge($theme-colors, $pastel-palette);
+
+//ADDING NEW FONT//
+
+$font-family-base: $classic-sans-family;
+
+//ADDING ICONS//
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import "../scss-bootstrap/bootstrap.scss";
+
+//ADDING PERSONAL STYLE
+@import "../personalized-bootstrap/custom-partials/variables";
+@import "../personalized-bootstrap/custom-partials/mixins";
+@import "../personalized-bootstrap/custom-partials/home";
